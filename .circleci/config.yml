@@ -43,7 +43,6 @@ jobs:
     steps:
       - checkout
       - secrethub/install
-      # - docker/install-docker-compose
       - gravitee/mvn_prepare_release:
           dry_run: << pipeline.parameters.dry_run >>
           maven_container_image_tag: stable-latest
